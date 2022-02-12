@@ -3,6 +3,7 @@ import Card from '../../components/card/Card'
 import Landing from  '../../assets/landing.png'
 import Burger from  '../../assets/burger.png'
 import Pizza from  '../../assets/pizza.png'
+import Hotdog from  '../../assets/hotdog.png'
 import classes from './Home.module.css'
 import ItemsList from '../allItems/ItemsList'
 
@@ -27,7 +28,7 @@ const Home = () => {
             <Card image={Burger}/>
           </div>
           <div className={classes.bottom}>
-            <Card image={Pizza}/>
+            <Card image={Hotdog}/>
           </div>
         </div>
         <div className={classes.right}>
