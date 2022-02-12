@@ -17,7 +17,7 @@ const Router = () => {
             <Routes>
                 <Route element={<Home/>} path="/"/>
                 <Route element={<Upload/>} path="/upload"/>
-                <Route element={<Model/>} path="/model:id"/>
+                <Route element={<Model/>} path="/model/:id"/>
             </Routes>
         </Suspense>
     </BrowserRouter>

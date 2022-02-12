@@ -1,9 +1,14 @@
+.main__container{
+    max-height: auto;
+    width: 100vw;
+}
 .home__container{
     width: 100vw;
     height: 100vh;
     max-height: auto;
     display: flex;
     position: relative;
+    margin-top: 10vh;
 }
 
 .left{
@@ -73,6 +78,15 @@ h1{
 	}
 }
 
+.items__title{
+    margin-left: 5vw;
+}
+.items{
+    margin-top: 10vh;
+    width: 90vw;
+    height: 100vh;
+
+}
 @media(max-width:700px){
     .home__container{
         flex-direction: column;
@@ -83,7 +97,7 @@ h1{
     }
 
     .left{
-        padding: 10% 0 0 12%;
+        padding: 10% 0 0 5%;
     }
     .abs,.bottom,.top{
         display: none;
@@ -91,5 +105,15 @@ h1{
 
     .right>img{
         animation: none;
+        margin-bottom: 10vh;
+    }
+    .items{
+        margin-top: 40vh;
+        margin-bottom: 20vh;
+        width: 100vw;
+    }
+    .items__title{
+        margin: 0;
+        text-align: center;
     }
 }

@@ -8,9 +8,10 @@ const Model=(props)=>{
     object={scene} />;
 }
 
-const ImageViewer = ({img}) => {
+const ImageViewer = ({img,color=false,fov}) => {
   return (
-    <Canvas pixelRatio={[1, 2]} camera={{ fov: 2 }}>
+    <Canvas pixelRatio={[1, 2]} camera={{ fov: fov }}>
+      {color && <color attach="background" args={["white"]} />}
       <ambientLight intensity={1} />
       <Suspense fallback={null}>
          <Model src={img}/>

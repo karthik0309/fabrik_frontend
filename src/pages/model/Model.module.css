@@ -1,0 +1,46 @@
+.model__container{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.model__preview{
+    width: 50vw;
+    height: 50vh;
+}
+
+.model__name{
+    color: rgb(51,48,84);
+    font-size: 64px;
+}
+
+.model__price{
+    margin-top: 10px;
+    color: #444;
+    font-size: larger;
+    background: transparent;
+}
+.model__info{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+@media (max-width:700px) {
+    .model__container{
+        flex-direction: column;
+    }
+
+    .model__preview,.model__info{
+        width: 100vw;
+    }
+
+    .model__info{
+        align-items: center;
+    }
+}

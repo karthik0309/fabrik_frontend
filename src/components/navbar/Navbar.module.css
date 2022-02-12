@@ -11,7 +11,6 @@
     font-size: large;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    position: relative;
 }
 
 .nav__title{
@@ -95,7 +94,7 @@
   
 @media(max-width:700px){
     .nav__container{
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 20px;
     }
     .nav__middle{

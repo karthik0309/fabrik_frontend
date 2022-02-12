@@ -22,7 +22,7 @@ const Navbar = () => {
         </h1>
 
         <div className={sideNavClass.join(" ")}>
-            <ul className={classes.nav__list}> 
+            <ul className={classes.nav__list} onClick={handleSideNavClick}> 
               <Link to="/" className={classes.nav__item}>
                 Home
               </Link>

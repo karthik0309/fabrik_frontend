@@ -1,0 +1,53 @@
+.item__card{
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+}
+
+.item__button{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(239, 233, 247);
+    color: rgb(98,65,175);
+    font-size: medium;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-size: large;
+}
+
+.item__info{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    background: transparent;
+}
+
+.price{
+    height: 30px;
+    width: 60px;
+    background-color: lightgreen;
+    border-radius: 6px;
+    color: green;
+    display: grid;
+    place-items: center;
+}
+
+.item__name{
+    background: transparent;
+    margin-left: 20px;
+    font-weight: larger;
+    text-align: center;
+    color: #444;
+}

@@ -114,7 +114,7 @@ const Upload = () => {
 
         </div>
         <div className={classes.preview}>
-            {selectedFile && <ImageViewer img={URL.createObjectURL(selectedFile)}/>}
+            {selectedFile && <ImageViewer img={URL.createObjectURL(selectedFile)} fov={2}/>}
         </div>
       </div>
     </div>
