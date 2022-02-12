@@ -1,0 +1,9 @@
+.card__container{
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+
+.card__container>img{
+    height: 50px;
+}

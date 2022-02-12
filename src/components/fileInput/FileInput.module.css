@@ -1,0 +1,22 @@
+.file{
+    width: 110px;
+    height: 50px;
+    border: 2px solid rgb(98,65,175);;
+    border-radius: 4px;
+    outline: none;
+    background: rgb(98,65,175);;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+label,i,p{
+    background-color: rgb(98,65,175);
+    color: white;
+    cursor: pointer;
+}
+

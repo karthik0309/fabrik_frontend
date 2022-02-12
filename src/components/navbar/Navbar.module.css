@@ -1,0 +1,134 @@
+.nav__container{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav__title{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51,48,84);
+}
+
+.nav__middle{
+    width: 40%;
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__item{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(119,125,135);
+    font-weight: 400;
+}
+
+.nav__item:hover{
+    color: rgb(98,65,175);
+}
+
+.nav__end{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    width: 10%;
+    display: none;
+    overflow-x: visible;
+}
+
+.login{
+    color: rgb(119,125,135);
+    background: transparent;
+}
+
+.signup{
+    width: 80px;
+    height: 40px;
+    border: 2px solid rgb(98,65,175);
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+    color: rgb(98,65,175);
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup:hover{
+    background-color: rgb(98,65,175);
+    color: white;
+}
+
+.h1 {
+    background-color: #444;
+    height: 3px;
+    width: 25px;
+    border-radius: 1.5px;
+    margin: 3px;
+    overflow-x: visible;
+}
+.hamburger:hover > .h1 {
+    background-color: #000;
+}
+  
+@media(max-width:700px){
+    .nav__container{
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .nav__middle{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        height: 92vh;
+        width: 100vw;
+        transform: translateX(120%);
+        transition: transform 0.5s;
+        z-index: 10;
+        background-color: white;
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: larger;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .nav__end{
+        display: none;
+    }
+    .hamburger {
+        width: 10px;
+        display: flex;
+    }
+}
+
+.show {
+    transform: translateX(0%);
+}
